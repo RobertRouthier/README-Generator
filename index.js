@@ -20,6 +20,16 @@ const questions = [{
     type: 'input',
     name: 'deployed',
     message: 'What is the deployed link?'
+},
+{
+    type: 'input',
+    name: 'github',
+    message: 'What is your github username?'
+},
+{
+    type: 'input',
+    name: 'email',
+    message: 'What is you email?'
 }
 ]
 
@@ -30,7 +40,11 @@ ${answers.description}
 # Installation 
 ${answers.install}
 # Deployed Link  
-[DEPLOYED LINK](${answers.deployed})`)
+[DEPLOYED LINK](${answers.deployed})
+#Github
+${answers.github}
+#Email
+${answers.email}`)
 
 }
 
