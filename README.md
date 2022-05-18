@@ -1,13 +1,13 @@
-# asdg
-#License
+# cool stuf
+# License
 Patent
 # Description 
-asdg
+being cool
 # Installation 
-asdg
+github
 # Github
-asg
+robertrouthier
 # Email
-asdg
+robert
 # Deployed Link  
-[DEPLOYED LINK](sg)
+[DEPLOYED LINK](github)

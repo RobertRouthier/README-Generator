@@ -41,7 +41,7 @@ const questions = [{
 
 function writeFile(answers){
 fs.writeFileSync('./README.md', `# ${answers.title}
-#License
+# License
 ${answers.license}
 # Description 
 ${answers.description}
