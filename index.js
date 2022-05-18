@@ -30,21 +30,30 @@ const questions = [{
     type: 'input',
     name: 'email',
     message: 'What is you email?'
+},
+{
+    type: 'list',
+    name: 'license',
+    message: 'License type?',
+    choices: ["Patent", "Trademark", "Copyright", "Exclusive", "Open Source"]
 }
 ]
 
 function writeFile(answers){
 fs.writeFileSync('./README.md', `# ${answers.title}
+#License
+${answers.license}
 # Description 
 ${answers.description}
 # Installation 
 ${answers.install}
+# Github
+${answers.github}
+# Email
+${answers.email}
 # Deployed Link  
 [DEPLOYED LINK](${answers.deployed})
-#Github
-${answers.github}
-#Email
-${answers.email}`)
+`)
 
 }
 
