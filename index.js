@@ -26,9 +26,9 @@ const questions = [{
 function writeFile(answers){
 fs.writeFileSync('./README.md', `# ${answers.title}
 # Description 
-## ${answers.description}
+${answers.description}
 # Installation 
-## ${answers.install}
+${answers.install}
 # Deployed Link  
 [DEPLOYED LINK](${answers.deployed})`)
 
@@ -38,6 +38,11 @@ inquirer.prompt(questions)
 .then((answers) =>{
 writeFile(answers)
 console.log('SUCCESS, you created a README')
+})
+.catch((error)=>{
+    if(error){
+        console.log('There seems to be an error', error)
+    }
 })
 
 
